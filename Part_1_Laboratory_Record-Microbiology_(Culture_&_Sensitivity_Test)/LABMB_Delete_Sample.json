@@ -1,0 +1,200 @@
+{
+	"resourceType": "Bundle",
+	"id": "a3b05867-1e7c-4d21-ae89-321aec33594d",
+	"identifier": {
+		"system": "urn:ietf:rfc:3986",
+		"value": "urn:uuid:a3b05867-1e7c-4d21-ae89-321aec33594d"
+	},
+	"type": "document",
+	"timestamp": "2024-06-27T10:33:02.020+08:00",
+	"entry": [
+		{
+			"fullUrl": "Composition/a4619633-8d5a-4777-b6fa-29a8e78182f4",
+			"resource": {
+				"resourceType": "Composition",
+				"id": "a4619633-8d5a-4777-b6fa-29a8e78182f4",
+				"extension": [
+					{
+						"url": "https://ehealth.gov.hk/FHIR/99999999-SendingLocation",
+						"valueString": "BRANCHA"
+					},
+					{
+						"url": "https://ehealth.gov.hk/FHIR/99999999-ComplianceLevel",
+						"valueString": "3"
+					},
+					{
+						"url": "https://ehealth.gov.hk/FHIR/99999999-DomainVersion",
+						"valueString": "eHRSS-1.4.3"
+					},
+					{
+						"url": "https://ehealth.gov.hk/FHIR/99999999-UploadMode",
+						"valueString": "NBL"
+					}
+				],
+				"status": "final",
+				"type": {
+					"coding": [
+						{
+							"system": "https://ehealth.gov.hk/FHIR",
+							"display": "Hong Kong eHR Healthcare Document"
+						}
+					],
+					"text": "Hong Kong eHR Healthcare Document"
+				},
+				"subject": {
+					"reference": "Patient/70cc5f5c-140e-4ab0-9e8c-ee88dcb3fe91"
+				},
+				"date": "2024-06-27T10:33:02.020+08:00",
+				"author": [
+					{
+						"reference": "Organization/223921e5-d8e1-4093-9aa5-9aa4f51dbdd7",
+						"display": "ZZZ Verification Hospital"
+					}
+				],
+				"title": "Hong Kong eHR Healthcare Document",
+				"section": [
+					{
+						"title": "Laboratory Result (Microbiology Result) Records",
+						"code": {
+							"coding": [
+								{
+									"system": "https://ehealth.gov.hk/FHIR/datadomain",
+									"code": "LABMB",
+									"display": "Laboratory Result (Microbiology Result) Records"
+								}
+							],
+							"text": "Laboratory Result (Microbiology Result) Records"
+						},
+						"entry": [
+							{
+								"extension": [
+									{
+										"url": "https://ehealth.gov.hk/FHIR/99999999-TransactionDateTime",
+										"valueDateTime": "2024-06-27T10:33:02.020+08:00"
+									},
+									{
+										"url": "https://ehealth.gov.hk/FHIR/99999999-TransactionType",
+										"valueString": "D"
+									},
+									{
+										"url": "https://ehealth.gov.hk/FHIR/99999999-LastUpdateDateTime",
+										"valueDateTime": "2024-06-27T10:33:02.020+08:00"
+									}
+								],
+								"reference": "DiagnosticReport/b1c202fe-31f5-4878-ae88-d3e6bfc681e3",
+								"identifier": {
+									"system": "https://ehealth.gov.hk/FHIR/HCP/local/Recordkey",
+									"value": "LAAM_20240627_PWH722B2162542"
+								}
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "Patient/70cc5f5c-140e-4ab0-9e8c-ee88dcb3fe91",
+			"resource": {
+				"resourceType": "Patient",
+				"id": "70cc5f5c-140e-4ab0-9e8c-ee88dcb3fe91",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2022-09-27T15:22:49.093+08:00"
+				},
+				"identifier": [
+					{
+						"type": {
+							"coding": [
+								{
+									"system": "https://ehealth.gov.hk/FHIR/typeofID-ext",
+									"code": "EHRNO"
+								}
+							]
+						},
+						"value": "017481258937"
+					},
+					{
+						"type": {
+							"coding": [
+								{
+									"system": "https://ehealth.gov.hk/FHIR/typeofID-ext",
+									"code": "ID"
+								}
+							]
+						},
+						"value": "W1200073"
+					}
+				],
+				"active": true,
+				"name": [
+					{
+						"use": "official",
+						"text": "PATIENT, HCR 02",
+						"family": "PATIENT",
+						"given": [
+							"HCR 02"
+						]
+					}
+				],
+				"gender": "male",
+				"birthDate": "1988-08-08"
+			}
+		},
+		{
+			"fullUrl": "DiagnosticReport/b1c202fe-31f5-4878-ae88-d3e6bfc681e3",
+			"resource": {
+				"resourceType": "DiagnosticReport",
+				"id": "b1c202fe-31f5-4878-ae88-d3e6bfc681e3",
+				"basedOn": [
+					{
+						"reference": "ServiceRequest/01fc1dc0-02ad-42b8-b74b-eba981783af2"
+					}
+				],
+				"status": "final",
+				"code": {
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+							"valueCode": "not-applicable"
+						}
+					]
+				}
+			}
+		},
+		{
+			"fullUrl": "ServiceRequest/01fc1dc0-02ad-42b8-b74b-eba981783af2",
+			"resource": {
+				"resourceType": "ServiceRequest",
+				"id": "01fc1dc0-02ad-42b8-b74b-eba981783af2",
+				"identifier": [
+					{
+						"system": "https://ehealth.gov.hk/FHIR/HCP/local/OrderNum",
+						"value": "8088450656:12345678900000111555"
+					}
+				],
+				"status": "completed",
+				"intent": "order",
+				"subject": {
+					"reference": "Patient/70cc5f5c-140e-4ab0-9e8c-ee88dcb3fe91"
+				}
+			}
+		},
+		{
+			"fullUrl": "Organization/223921e5-d8e1-4093-9aa5-9aa4f51dbdd7",
+			"resource": {
+				"resourceType": "Organization",
+				"id": "223921e5-d8e1-4093-9aa5-9aa4f51dbdd7",
+				"identifier": [
+					{
+						"system": "https://ehealth.gov.hk/FHIR/pvdr",
+						"value": "9907919043"
+					}
+				],
+				"name": "ZZZ VERIFICATION HOSPITAL",
+				"alias": [
+					"ZZZ Hospital"
+				]
+			}
+		}
+	]
+}

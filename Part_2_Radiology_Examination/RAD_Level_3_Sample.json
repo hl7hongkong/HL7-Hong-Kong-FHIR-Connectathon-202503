@@ -1,0 +1,462 @@
+{
+	"resourceType": "Bundle",
+	"id": "1c938b84-f2fb-44f4-b8da-860dfcacd9e0",
+	"identifier": {
+		"system": "urn:ietf:rfc:4122",
+		"value": "urn:uuid:1c938b84-f2fb-44f4-b8da-860dfcacd9e0"
+	},
+	"type": "document",
+	"timestamp": "2024-11-11T14:30:00.000+08:00",
+	"entry": [
+		{
+			"fullUrl": "Composition/30551ce1-5a28-4356-b684-1e639094ad4d",
+			"resource": {
+				"resourceType": "Composition",
+				"id": "30551ce1-5a28-4356-b684-1e639094ad4d",
+				"extension": [
+					{
+						"url": "https://ehealth.gov.hk/FHIR/99999999-SendingLocation",
+						"valueString": "BRANCHA"
+					},
+					{
+						"url": "https://ehealth.gov.hk/FHIR/99999999-ComplianceLevel",
+						"valueString": "3"
+					},
+					{
+						"url": "https://ehealth.gov.hk/FHIR/99999999-DomainVersion",
+						"valueString": "eHRSS-1.5.0"
+					},
+					{
+						"url": "https://ehealth.gov.hk/FHIR/99999999-UploadMode",
+						"valueString": "NBL"
+					}
+				],
+				"identifier": {
+					"system": "urn:oid:2.16.724.4.8.10.200.10",
+					"value": "3f69e0a5-2177-4540-baab-7a5d0877428f"
+				},
+				"status": "final",
+				"type": {
+					"coding": [
+						{
+							"system": "https://ehealth.gov.hk/FHIR/",
+							"display": "Hong Kong eHR Healthcare Document"
+						}
+					]
+				},
+				"date": "2023-10-20T14:30:00.000+08:00",
+				"author": [
+					{
+						"reference": "Organization/3b3703a9-7a26-427c-9352-4e41f046d85e"
+					}
+				],
+				"title": "Hong Kong eHR Healthcare Document",
+				"section": [
+					{
+						"title": "Hong Kong eHR Healthcare Document",
+						"code": {
+							"coding": [
+								{
+									"system": "https://ehealth.gov.hk/FHIR/datadomain",
+									"code": "RAD",
+									"display": "Radiology Examination"
+								}
+							]
+						},
+						"entry": [
+							{
+								"extension": [
+									{
+										"url": "https://ehealth.gov.hk/FHIR/99999999-TransactonType",
+										"valueString": "U"
+									},
+									{
+										"url": "https://ehealth.gov.hk/FHIR/99999999-TransactionDateTime",
+										"valueDateTime": "2023-10-20T14:30:00.000+08:00"
+									},
+									{
+										"url": "https://ehealth.gov.hk/FHIR/99999999-RecordCreateDatetime",
+										"valueDateTime": "2023-10-20T14:30:00.000+08:00"
+									},
+									{
+										"url": "https://ehealth.gov.hk/FHIR/99999999-RecordLastUpdateDatetime",
+										"valueDateTime": "2023-10-20T14:30:00.000+08:00"
+									},
+									{
+										"url": "https://ehealth.gov.hk/FHIR/99999999-LastUpdateDateTime",
+										"valueDateTime": "2023-10-20T14:30:00.000+08:00"
+									},
+									{
+										"url": "https://ehealth.gov.hk/FHIR/99999999-RecordCreateInstIdentifier",
+										"valueString": "8877350433"
+									},
+									{
+										"url": "https://ehealth.gov.hk/FHIR/99999999-RecordCreateInstName",
+										"valueString": "ZZZ VERIFICATION HOSPITAL"
+									},
+									{
+										"url": "https://ehealth.gov.hk/FHIR/99999999-RecordUpdateInstIdentifier",
+										"valueString": "8877350433"
+									},
+									{
+										"url": "https://ehealth.gov.hk/FHIR/99999999-RecordUpdateInstName",
+										"valueString": "ZZZ VERIFICATION HOSPITAL"
+									}
+								],
+								"reference": "DiagnosticReport/534922e6-1e05-4b08-b0b3-068773c12658",
+								"identifier": {
+									"system": "https://ehealth.gov.hk/FHIR/HCP/local/Recordkey",
+									"value": "DHUB_20250312_RAD001"
+								}
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "Patient/d58dd75b-cf09-4a1c-b913-c9e867f27616",
+			"resource": {
+				"resourceType": "Patient",
+				"id": "d58dd75b-cf09-4a1c-b913-c9e867f27616",
+				"identifier": [
+					{
+						"type": {
+							"coding": [
+								{
+									"system": "httsp://ehealth.gov.hk/FHIR/typeofID-ext",
+									"code": "EHRNO"
+								}
+							]
+						},
+						"value": "234567808800"
+					},
+					{
+						"type": {
+							"coding": [
+								{
+									"system": "https://ehealth.gov.hk/FHIR/typeofID-ext",
+									"code": "ID"
+								}
+							]
+						},
+						"value": "Q1730351"
+					}
+				],
+				"active": true,
+				"name": [
+					{
+						"use": "official",
+						"text": "CHAN, MAN MAN",
+						"family": "CHAN",
+						"given": [
+							"MAN MAN"
+						]
+					}
+				],
+				"gender": "female",
+				"birthDate": "1974-12-25"
+			}
+		},
+		{
+			"fullUrl": "Organization/3b3703a9-7a26-427c-9352-4e41f046d85e",
+			"resource": {
+				"resourceType": "Organization",
+				"id": "3b3703a9-7a26-427c-9352-4e41f046d85e",
+				"name": "GGBA Hospital"
+			}
+		},
+		{
+			"fullUrl": "DiagnosticReport/534922e6-1e05-4b08-b0b3-068773c12658",
+			"resource": {
+				"resourceType": "DiagnosticReport",
+				"id": "534922e6-1e05-4b08-b0b3-068773c12658",
+				"extension": [
+					{
+						"url": "https://ehealth.gov.hk/FHIR/1003505-RadExamRemark",
+						"valueString": "No remark"
+					}
+				],
+				"basedOn": [
+					{
+						"reference": "ServiceRequest/8030e4f9-573d-4ceb-a429-aaf2cdfbabd3"
+					}
+				],
+				"status": "final",
+				"code": {
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/dataAbsentReason",
+							"valueCode": "unsupported"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/d58dd75b-cf09-4a1c-b913-c9e867f27616"
+				},
+				"encounter": {
+					"reference": "Encounter/169281c8-fb76-4e9c-b30f-3dfb3a7f53f2"
+				},
+				"effectiveDateTime": "2023-10-20T14:30:00.000+08:00",
+				"issued": "2023-10-20T14:30:00.000+08:00",
+				"performer": [
+					{
+						"reference": "PractitionerRole/18e3eadf-9d35-4e51-ad4b-90e168250776"
+					},
+					{
+						"reference": "PractitionerRole/54ecf013-008b-44ab-b0bd-c557930e1dc9"
+					}
+				],
+				"resultsInterpreter": [
+					{
+						"reference": "PractitionerRole/9639b776-1aea-4749-a218-5e3626180175"
+					}
+				],
+				"imagingStudy": [
+					{
+						"reference": "ImagingStudy/c220e36c-eb67-4fc4-9ba1-2fabc52acec6"
+					}
+				],
+				"conclusion": "No outstanding issue found",
+				"presentedForm": [
+					{
+						"contentType": "application/pdf",
+						"url": "file://8088450656.BRANCHA.RAD.DHUB_20250312_RAD001.KJV490D64A7FP01B.pdf.234567808800.20231002084530",
+						"creation": "2023-10-02T08:45:30.000+08:00"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "ServiceRequest/8030e4f9-573d-4ceb-a429-aaf2cdfbabd3",
+			"resource": {
+				"resourceType": "ServiceRequest",
+				"id": "8030e4f9-573d-4ceb-a429-aaf2cdfbabd3",
+				"identifier": [
+					{
+						"system": "https://ehealth.gov.hk/FHIR/HCP/local/ReferringNum",
+						"value": "8088450656:12345678900000000306"
+					},
+					{
+						"system": "https://ehealth.gov.hk/FHIR/HCP/local/RegistrationNum",
+						"value": "16159196"
+					}
+				],
+				"status": "completed",
+				"intent": "order",
+				"code": {
+					"text": "CT Thorax (P+C)"
+				},
+				"occurrenceDateTime": "2023-10-20T14:30:00.000+08:00",
+				"requester": {
+					"reference": "PractitionerRole/78c638fe-4af3-4074-93be-bf2b03a8c67c"
+				}
+			}
+		},
+		{
+			"fullUrl": "Encounter/169281c8-fb76-4e9c-b30f-3dfb3a7f53f2",
+			"resource": {
+				"resourceType": "Encounter",
+				"id": "169281c8-fb76-4e9c-b30f-3dfb3a7f53f2",
+				"extension": [
+					{
+						"url": "https://ehealth.gov.hk/FHIR/99999999-AttendanceInstIdentifier",
+						"valueString": "9907819043"
+					}
+				],
+				"identifier": [
+					{
+						"system": "https://ehealth.gov.hk/FHIR/HCP/local/EpisodeNum",
+						"value": "OP123456"
+					}
+				],
+				"status": "finished",
+				"class": {
+					"system": "https://ehealth.gov.hk/FHIR/class",
+					"code": "UNKNOWN",
+					"display": "Unknown status"
+				}
+			}
+		},
+		{
+			"fullUrl": "PractitionerRole/18e3eadf-9d35-4e51-ad4b-90e168250776",
+			"resource": {
+				"resourceType": "PractitionerRole",
+				"id": "18e3eadf-9d35-4e51-ad4b-90e168250776",
+				"practitioner": {
+					"reference": "Practitioner/bc7606ef-3df6-4a55-a836-de43841b3368"
+				},
+				"organization": {
+					"reference": "Organization/9117b4c4-41ee-451c-a87c-1eee5221a641"
+				}
+			}
+		},
+		{
+			"fullUrl": "Practitioner/bc7606ef-3df6-4a55-a836-de43841b3368",
+			"resource": {
+				"resourceType": "Practitioner",
+				"id": "bc7606ef-3df6-4a55-a836-de43841b3368",
+				"extension": [
+					{
+						"url": "https://ehealth.gov.hk/FHIR/1003494-ExamHCSChineseName",
+						"valueString": "陳小明醫生"
+					}
+				],
+				"identifier": [
+					{
+						"type": {
+							"coding": [
+								{
+									"system": "https://ehealth.gov.hk/FHIR/staffTypecd",
+									"code": "C",
+									"display": "Chief procedure healthcare staff"
+								}
+							],
+							"text": "Chief in-charge"
+						}
+					}
+				],
+				"name": [
+					{
+						"text": "Dr Chan Siu Ming"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "Organization/9117b4c4-41ee-451c-a87c-1eee5221a641",
+			"resource": {
+				"resourceType": "Organization",
+				"id": "9117b4c4-41ee-451c-a87c-1eee5221a641",
+				"identifier": [
+					{
+						"system": "https://ehealth.gov.hk/FHIR/pvdr",
+						"value": "9907819043"
+					}
+				],
+				"name": "ZZZ VERIFICATION HOSPITAL",
+				"alias": [
+					"ZZZ Hospital"
+				]
+			}
+		},
+		{
+			"fullUrl": "PractitionerRole/54ecf013-008b-44ab-b0bd-c557930e1dc9",
+			"resource": {
+				"resourceType": "PractitionerRole",
+				"id": "54ecf013-008b-44ab-b0bd-c557930e1dc9",
+				"practitioner": {
+					"reference": "Practitioner/4777929a-bf1d-4b32-8dd5-d80a6dd5f79e"
+				}
+			}
+		},
+		{
+			"fullUrl": "Practitioner/4777929a-bf1d-4b32-8dd5-d80a6dd5f79e",
+			"resource": {
+				"resourceType": "Practitioner",
+				"id": "4777929a-bf1d-4b32-8dd5-d80a6dd5f79e",
+				"extension": [
+					{
+						"url": "https://ehealth.gov.hk/FHIR/1003494-ExamHCSChineseName",
+						"valueString": "Dr 李利里醫生"
+					}
+				],
+				"identifier": [
+					{
+						"type": {
+							"coding": [
+								{
+									"system": "https://ehealth.gov.hk/staffTypecd",
+									"code": "A",
+									"display": "Chief procedure healthcare staff"
+								}
+							],
+							"text": "Assistant healthcare staff of the procedure"
+						}
+					}
+				],
+				"name": [
+					{
+						"text": "Dr Lee Lee Lee"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "PractitionerRole/9639b776-1aea-4749-a218-5e3626180175",
+			"resource": {
+				"resourceType": "PractitionerRole",
+				"id": "9639b776-1aea-4749-a218-5e3626180175",
+				"practitioner": {
+					"reference": "Practitioner/b360692d-adbb-4231-b7ec-f9e439cf3159"
+				}
+			}
+		},
+		{
+			"fullUrl": "Practitioner/b360692d-adbb-4231-b7ec-f9e439cf3159",
+			"resource": {
+				"resourceType": "Practitioner",
+				"id": "b360692d-adbb-4231-b7ec-f9e439cf3159",
+				"extension": [
+					{
+						"url": "https://ehealth.gov.hk/FHIR/1003501-ReportedByChineseName",
+						"valueString": "高壯醫生"
+					}
+				],
+				"name": [
+					{
+						"text": "Dr John Ho"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "PractitionerRole/78c638fe-4af3-4074-93be-bf2b03a8c67c",
+			"resource": {
+				"resourceType": "PractitionerRole",
+				"id": "78c638fe-4af3-4074-93be-bf2b03a8c67c",
+				"organization": {
+					"reference": "Organization/4e399f2a-2f23-4d14-a8ce-23f01c080114"
+				}
+			}
+		},
+		{
+			"fullUrl": "Organization/4e399f2a-2f23-4d14-a8ce-23f01c080114",
+			"resource": {
+				"resourceType": "Organization",
+				"id": "4e399f2a-2f23-4d14-a8ce-23f01c080114",
+				"identifier": [
+					{
+						"system": "https://ehealth.gov.hk/FHIR/pvdr",
+						"value": "9006662656"
+					}
+				],
+				"name": "LAAM APEX HOSPITAL",
+				"alias": [
+					"LAAM APEX"
+				]
+			}
+		},
+		{
+			"fullUrl": "ImagingStudy/c220e36c-eb67-4fc4-9ba1-2fabc52acec6",
+			"resource": {
+				"resourceType": "ImagingStudy",
+				"id": "c220e36c-eb67-4fc4-9ba1-2fabc52acec6",
+				"identifier": [
+					{
+						"system": "http://ehealth.gov.hk/FHIR/accessionNo",
+						"value": "A1223456789012345"
+					}
+				],
+				"status": "available",
+				"modality": [
+					{
+						"system": "https://ehealth.gov.hk/FHIR/modality",
+						"code": "MRI"
+					}
+				],
+				"started": "2023-10-20T14:30:00.000+08:00"
+			}
+		}
+	]
+}

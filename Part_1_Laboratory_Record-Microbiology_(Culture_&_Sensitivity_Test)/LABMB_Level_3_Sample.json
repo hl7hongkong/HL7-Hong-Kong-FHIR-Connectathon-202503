@@ -1,0 +1,1212 @@
+{
+	"resourceType": "Bundle",
+	"identifier": {
+		"system": "urn:ietf:rfc:3986",
+		"value": "urn:uuid:6deda5c0-ab87-4d51-977c-9ab96028784e"
+	},
+	"type": "document",
+	"timestamp": "2022-12-01T05:04:48.865+08:00",
+	"entry": [
+		{
+			"fullUrl": "Composition/d846174d-0dfd-45bf-8a7f-2b8d4cd75f1f",
+			"resource": {
+				"resourceType": "Composition",
+				"id": "d846174d-0dfd-45bf-8a7f-2b8d4cd75f1f",
+				"extension": [
+					{
+						"url": "https://ehealth.gov.hk/FHIR/99999999-SendingLocation",
+						"valueString": "BRANCHA"
+					},
+					{
+						"url": "https://ehealth.gov.hk/FHIR/99999999-ComplianceLevel",
+						"valueString": "3"
+					},
+					{
+						"url": "https://ehealth.gov.hk/FHIR/99999999-DomainVersion",
+						"valueString": "eHRSS-1.4.3"
+					},
+					{
+						"url": "https://ehealth.gov.hk/FHIR/99999999-UploadMode",
+						"valueString": "NBL"
+					}
+				],
+				"status": "final",
+				"type": {
+					"coding": [
+						{
+							"system": "https://ehealth.gov.hk/FHIR",
+							"display": "Hong Kong eHR Healthcare Document"
+						}
+					],
+					"text": "Hong Kong eHR Healthcare Document"
+				},
+				"subject": {
+					"reference": "Patient/61bcd785-9147-4d72-99e0-e0cf17ede1d5"
+				},
+				"date": "2022-12-01T05:04:48+08:00",
+				"author": [
+					{
+						"reference": "Organization/bc9921ec-09d7-4417-ab64-3ea9d34192cc",
+						"display": "ZZZ Verification Hospital"
+					}
+				],
+				"title": "Hong Kong eHR Healthcare Document",
+				"section": [
+					{
+						"title": "Laboratory Result (Microbiology Result) Records",
+						"code": {
+							"coding": [
+								{
+									"system": "https://ehealth.gov.hk/FHIR/datadomain",
+									"code": "LABMB",
+									"display": "Laboratory Result (Microbiology Result) Records"
+								}
+							],
+							"text": "Laboratory Result (Microbiology Result) Records"
+						},
+						"entry": [
+							{
+								"extension": [
+									{
+										"url": "https://ehealth.gov.hk/FHIR/99999999-TransactionType",
+										"valueString": "U"
+									},
+									{
+										"url": "https://ehealth.gov.hk/FHIR/99999999-TransactionDateTime",
+										"valueDateTime": "2022-05-06T15:47:47.655+08:00"
+									},
+									{
+										"url": "https://ehealth.gov.hk/FHIR/99999999-RecordCreateDatetime",
+										"valueDateTime": "2022-05-06T15:47:47.655+08:00"
+									},
+									{
+										"url": "https://ehealth.gov.hk/FHIR/99999999-RecordLastUpdateDatetime",
+										"valueDateTime": "2022-05-06T15:47:47.655+08:00"
+									},
+									{
+										"url": "https://ehealth.gov.hk/FHIR/99999999-LastUpdateDateTime",
+										"valueDateTime": "2022-05-06T15:47:47.655+08:00"
+									},
+									{
+										"url": "https://ehealth.gov.hk/FHIR/99999999-RecordCreateInstIdentifier",
+										"valueString": "9006662656"
+									},
+									{
+										"url": "https://ehealth.gov.hk/FHIR/99999999-RecordCreateInstName",
+										"valueString": "LAAM Laboratory"
+									},
+									{
+										"url": "https://ehealth.gov.hk/FHIR/99999999-RecordUpdateInstIndentifier",
+										"valueString": "9006662656"
+									},
+									{
+										"url": "https://ehealth.gov.hk/FHIR/99999999-RecordUpdateInstName",
+										"valueString": "LAAM Laboratory"
+									}
+								],
+								"reference": "DiagnosticReport/ec29dc37-8fac-437c-a7e7-4e0a1b2b4430",
+								"identifier": {
+									"system": "https://ehealth.gov.hk/FHIR/HCP/local/Recordkey",
+									"value": "LAAM_20240627_PWH722B2162542"
+								}
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "Patient/61bcd785-9147-4d72-99e0-e0cf17ede1d5",
+			"resource": {
+				"resourceType": "Patient",
+				"id": "61bcd785-9147-4d72-99e0-e0cf17ede1d5",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2022-09-27T15:22:49.093+08:00"
+				},
+				"identifier": [
+					{
+						"type": {
+							"coding": [
+								{
+									"system": "https://ehealth.gov.hk/FHIR/typeofID-ext",
+									"code": "EHRNO"
+								}
+							]
+						},
+						"value": "017481258937"
+					},
+					{
+						"type": {
+							"coding": [
+								{
+									"system": "https://ehealth.gov.hk/FHIR/typeofID-ext",
+									"code": "ID"
+								}
+							]
+						},
+						"value": "W1200073"
+					}
+				],
+				"active": true,
+				"name": [
+					{
+						"use": "official",
+						"text": "PATIENT, HCR 02",
+						"family": "PATIENT",
+						"given": [
+							"HCR 02"
+						]
+					}
+				],
+				"gender": "male",
+				"birthDate": "1988-08-08"
+			}
+		},
+		{
+			"fullUrl": "DiagnosticReport/ec29dc37-8fac-437c-a7e7-4e0a1b2b4430",
+			"resource": {
+				"resourceType": "DiagnosticReport",
+				"id": "ec29dc37-8fac-437c-a7e7-4e0a1b2b4430",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2022-09-27T15:22:56.319+08:00"
+				},
+				"extension": [
+					{
+						"url": "https://ehealth.gov.hk/FHIR/1003526-LabReportComment",
+						"valueString": "There are no zone diameter breakpoints in the CLSI standard for cefoperazone/sulbactam tested, the result is for reference only."
+					},
+					{
+						"url": "https://ehealth.gov.hk/FHIR/1003520-LabReportStatusDesc",
+						"valueString": "Unspecified report status"
+					},
+					{
+						"url": "https://ehealth.gov.hk/FHIR/1003521-LabReportStatusLocalDesc",
+						"valueString": "Unspecified"
+					}
+				],
+				"identifier": [
+					{
+						"system": "https://ehealth.gov.hk/FHIR/HCP/local/RequestNum",
+						"value": "22B2162542"
+					}
+				],
+				"basedOn": [
+					{
+						"reference": "ServiceRequest/63706305-46ec-4e54-8aaf-844810d8d8f2"
+					}
+				],
+				"status": "unknown",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "https://ehealth.gov.hk/FHIR/LabCatCode",
+								"code": "MICRO",
+								"display": "Microbiology & Virology"
+							}
+						],
+						"text": "Microbiology"
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HCP/local/PanelCode",
+							"code": "SP_CUL",
+							"display": "Sputum Culture"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/61bcd785-9147-4d72-99e0-e0cf17ede1d5"
+				},
+				"effectiveDateTime": "2022-03-24T10:45:00.000+08:00",
+				"issued": "2022-03-26T16:06:09.000+08:00",
+				"performer": [
+					{
+						"reference": "PractitionerRole/2e804d1b-b517-451a-b66a-ed3fcebd8f82"
+					}
+				],
+				"specimen": [
+					{
+						"reference": "Specimen/2f9d2a2c-989d-41f4-87dc-ba8714eb54a6"
+					}
+				],
+				"result": [
+					{
+						"reference": "Observation/066699a4-94d9-4bd8-8343-af43dae1421f"
+					},
+					{
+						"reference": "Observation/951528f7-04b3-41d1-9943-7fb145f0b403"
+					},
+					{
+						"reference": "Observation/76bee290-2832-43e1-81b3-a15a911bd960"
+					},
+					{
+						"reference": "Observation/b0075006-31fc-4764-9ceb-349962f2b02d"
+					}
+				],
+				"presentedForm": [
+					{
+						"contentType": "application/pdf",
+						"url": "file://9907819043.BRANCHA.LABMB.LAAM_20240627_PWH722B2162542.22B2162542MBLENQ-00_PDF.pdf.017481258937.20220401140200",
+						"creation": "2022-04-01T14:02:00.000+08:00"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "Observation/066699a4-94d9-4bd8-8343-af43dae1421f",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "066699a4-94d9-4bd8-8343-af43dae1421f",
+				"extension": [
+					{
+						"url": "https://ehealth.gov.hk/FHIR/99999999-LabTestResultType",
+						"valueDecimal": 3
+					},
+					{
+						"url": "https://ehealth.gov.hk/FHIR/1003545-LabReportableResult",
+						"valueString": "Purulent Blood-stained"
+					},
+					{
+						"url": "https://ehealth.gov.hk/FHIR/99999999-STresultIndicator",
+						"valueString": "0"
+					},
+					{
+						"url": "https://ehealth.gov.hk/FHIR/1003554-LabTestTextResult",
+						"valueString": "Purulent Blood-stained"
+					}
+				],
+				"status": "final",
+				"category": [
+					{
+						"coding": [
+							{
+								"code": "RSLT"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HKCTT",
+							"code": "5201283",
+							"display": "Appearance of Sputum"
+						},
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HCP/local/LabTest",
+							"code": "SP_APP",
+							"display": "Appearance :"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/61bcd785-9147-4d72-99e0-e0cf17ede1d5"
+				}
+			}
+		},
+		{
+			"fullUrl": "Observation/951528f7-04b3-41d1-9943-7fb145f0b403",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "951528f7-04b3-41d1-9943-7fb145f0b403",
+				"extension": [
+					{
+						"url": "https://ehealth.gov.hk/FHIR/99999999-LabTestResultType",
+						"valueDecimal": 3
+					},
+					{
+						"url": "https://ehealth.gov.hk/FHIR/1003545-LabReportableResult",
+						"valueString": "Moderate numbers of WBC seen A few epithelial cell seen"
+					},
+					{
+						"url": "https://ehealth.gov.hk/FHIR/99999999-STresultIndicator",
+						"valueString": "0"
+					},
+					{
+						"url": "https://ehealth.gov.hk/FHIR/1003554-LabTestTextResult",
+						"valueString": "Moderate numbers of WBC seen A few epithelial cell seen"
+					}
+				],
+				"status": "final",
+				"category": [
+					{
+						"coding": [
+							{
+								"code": "RSLT"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HKCTT",
+							"code": "5201463",
+							"display": "Microscopic observation [Identifier] in Unspecified specimen by Smear"
+						},
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HCP/local/LabTest",
+							"code": "SP_GRAM",
+							"display": "Microscopy :"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/61bcd785-9147-4d72-99e0-e0cf17ede1d5"
+				}
+			}
+		},
+		{
+			"fullUrl": "Observation/76bee290-2832-43e1-81b3-a15a911bd960",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "76bee290-2832-43e1-81b3-a15a911bd960",
+				"extension": [
+					{
+						"url": "https://ehealth.gov.hk/FHIR/99999999-LabTestResultType",
+						"valueDecimal": 3
+					},
+					{
+						"url": "https://ehealth.gov.hk/FHIR/99999999-STresultIndicator",
+						"valueString": "1"
+					}
+				],
+				"status": "final",
+				"category": [
+					{
+						"coding": [
+							{
+								"code": "RSLT"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HKCTT",
+							"code": "5200597",
+							"display": "Bacteria identified in Unspecified specimen by Respiratory culture"
+						},
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HCP/local/LabTest",
+							"code": "SP_ORG",
+							"display": "Sputum culture :"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/61bcd785-9147-4d72-99e0-e0cf17ede1d5"
+				},
+				"hasMember": [
+					{
+						"reference": "Observation/b7c113c5-0e9e-43e7-9a6d-e1b60a374487"
+					},
+					{
+						"reference": "Observation/817b0215-cd37-438f-a36e-ff86d981b9d5"
+					},
+					{
+						"reference": "Observation/8d78cb40-049f-40ed-a135-8887416403f3"
+					},
+					{
+						"reference": "Observation/2377fca6-fb6e-4f5a-91ad-bc73c7588880"
+					},
+					{
+						"reference": "Observation/a6d415e2-b064-4d50-8af6-1d8ea457ed6e"
+					},
+					{
+						"reference": "Observation/356d01c2-657c-4c62-a227-184b68605100"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "Observation/b0075006-31fc-4764-9ceb-349962f2b02d",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "b0075006-31fc-4764-9ceb-349962f2b02d",
+				"extension": [
+					{
+						"url": "https://ehealth.gov.hk/FHIR/99999999-LabTestResultType",
+						"valueDecimal": 3
+					},
+					{
+						"url": "https://ehealth.gov.hk/FHIR/99999999-STresultIndicator",
+						"valueString": "1"
+					}
+				],
+				"status": "final",
+				"category": [
+					{
+						"coding": [
+							{
+								"code": "RSLT"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HKCTT",
+							"code": "5200597",
+							"display": "Bacteria identified in Unspecified specimen by Respiratory culture"
+						},
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HCP/local/LabTest",
+							"code": "SP_ORG",
+							"display": "Sputum culture :"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/61bcd785-9147-4d72-99e0-e0cf17ede1d5"
+				},
+				"hasMember": [
+					{
+						"reference": "Observation/ac371156-dc77-421f-97e3-72ffc16a6e74"
+					},
+					{
+						"reference": "Observation/cfd4f230-76fd-45bc-a4c9-e6f92cddbb24"
+					},
+					{
+						"reference": "Observation/4336ea0f-8b08-4b9a-9e78-5f831ecdc179"
+					},
+					{
+						"reference": "Observation/211b8f60-b1fa-4563-b1ff-bd5689417cdf"
+					},
+					{
+						"reference": "Observation/71681733-8448-43a2-a57c-bd98818c2793"
+					},
+					{
+						"reference": "Observation/269959a6-26bb-424f-9d8d-7ca2f1169b11"
+					},
+					{
+						"reference": "Observation/4b42c021-0be2-4033-8d87-39d310ac1c65"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "Observation/b7c113c5-0e9e-43e7-9a6d-e1b60a374487",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "b7c113c5-0e9e-43e7-9a6d-e1b60a374487",
+				"identifier": [
+					{
+						"value": "C&ST|SP_ORG|1|1"
+					}
+				],
+				"status": "final",
+				"category": [
+					{
+						"coding": [
+							{
+								"code": "organism"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HKCTT",
+							"code": "5003429",
+							"display": "Klebsiella pneumoniae complex"
+						},
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HCP/local/LabTest",
+							"code": "32597",
+							"display": "Klebsiella pneumoniae complex"
+						}
+					]
+				}
+			}
+		},
+		{
+			"fullUrl": "Observation/ac371156-dc77-421f-97e3-72ffc16a6e74",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "ac371156-dc77-421f-97e3-72ffc16a6e74",
+				"identifier": [
+					{
+						"value": "C&ST|SP_ORG|2|1"
+					}
+				],
+				"status": "final",
+				"category": [
+					{
+						"coding": [
+							{
+								"code": "organism"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HKCTT",
+							"code": "5000552",
+							"display": "Pseudomonas aeruginosa"
+						},
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HCP/local/LabTest",
+							"code": "20800",
+							"display": "Pseudomonas aeruginosa"
+						}
+					]
+				}
+			}
+		},
+		{
+			"fullUrl": "ServiceRequest/63706305-46ec-4e54-8aaf-844810d8d8f2",
+			"resource": {
+				"resourceType": "ServiceRequest",
+				"id": "63706305-46ec-4e54-8aaf-844810d8d8f2",
+				"identifier": [
+					{
+						"system": "https://ehealth.gov.hk/FHIR/HCP/local/OrderNum",
+						"value": "8088450656:12345678900000111555"
+					}
+				],
+				"status": "completed",
+				"intent": "order",
+				"subject": {
+					"reference": "Patient/61bcd785-9147-4d72-99e0-e0cf17ede1d5"
+				},
+				"encounter": {
+					"reference": "Encounter/9b8f0753-1f9b-43b4-ba29-1850448ef70a"
+				},
+				"requester": {
+					"reference": "PractitionerRole/5d7ed8e9-73e7-4dd1-a348-9b4b8d0d8312"
+				},
+				"supportingInfo": [
+					{
+						"display": "Ca lung"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "PractitionerRole/5d7ed8e9-73e7-4dd1-a348-9b4b8d0d8312",
+			"resource": {
+				"resourceType": "PractitionerRole",
+				"id": "5d7ed8e9-73e7-4dd1-a348-9b4b8d0d8312",
+				"practitioner": {
+					"reference": "Practitioner/7b906e84-1646-477c-87f5-3f1818124ea6"
+				},
+				"organization": {
+					"reference": "Organization/bc9921ec-09d7-4417-ab64-3ea9d34192cc"
+				}
+			}
+		},
+		{
+			"fullUrl": "Organization/bc9921ec-09d7-4417-ab64-3ea9d34192cc",
+			"resource": {
+				"resourceType": "Organization",
+				"id": "bc9921ec-09d7-4417-ab64-3ea9d34192cc",
+				"identifier": [
+					{
+						"system": "https://ehealth.gov.hk/FHIR/pvdr",
+						"value": "9907919043"
+					}
+				],
+				"name": "ZZZ VERIFICATION HOSPITAL",
+				"alias": [
+					"ZZZ Hospital"
+				]
+			}
+		},
+		{
+			"fullUrl": "PractitionerRole/2e804d1b-b517-451a-b66a-ed3fcebd8f82",
+			"resource": {
+				"resourceType": "PractitionerRole",
+				"id": "2e804d1b-b517-451a-b66a-ed3fcebd8f82",
+				"practitioner": {
+					"reference": "Practitioner/fd41e4de-f2e7-46f1-a504-f12bb62907fa"
+				},
+				"organization": {
+					"reference": "Organization/bc9921ec-09d7-4417-ab64-3ea9d34192cc"
+				}
+			}
+		},
+		{
+			"fullUrl": "Encounter/9b8f0753-1f9b-43b4-ba29-1850448ef70a",
+			"resource": {
+				"resourceType": "Encounter",
+				"id": "9b8f0753-1f9b-43b4-ba29-1850448ef70a",
+				"extension": [
+					{
+						"url": "https://ehealth.gov.hk/FHIR/99999999-AttendanceInstIdentifier",
+						"valueString": "9907819043"
+					}
+				],
+				"identifier": [
+					{
+						"system": "https://ehealth.gov.hk/FHIR/HCP/local/EpisodeNum",
+						"value": "HN22033483V"
+					}
+				],
+				"status": "finished",
+				"class": {
+					"system": "https://ehealth.gov.hk/FHIR/class",
+					"code": "UNKNOWN",
+					"display": "Unknown status"
+				},
+				"subject": {
+					"reference": "Patient/61bcd785-9147-4d72-99e0-e0cf17ede1d5"
+				}
+			}
+		},
+		{
+			"fullUrl": "Specimen/2f9d2a2c-989d-41f4-87dc-ba8714eb54a6",
+			"resource": {
+				"resourceType": "Specimen",
+				"id": "2f9d2a2c-989d-41f4-87dc-ba8714eb54a6",
+				"extension": [
+					{
+						"url": "https://ehealth.gov.hk/FHIR/1003530-SpecimenDetail",
+						"valueString": "Red cap of the Hickman line"
+					}
+				],
+				"type": {
+					"coding": [
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HCP/local/SpecimenType",
+							"code": "23164",
+							"display": "SPUTUM"
+						},
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HKCTT",
+							"code": "5700284",
+							"display": "Sputum"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/61bcd785-9147-4d72-99e0-e0cf17ede1d5"
+				},
+				"receivedTime": "2022-03-24T14:40:00.000+08:00",
+				"request": [
+					{
+						"reference": "ServiceRequest/63706305-46ec-4e54-8aaf-844810d8d8f2"
+					}
+				],
+				"collection": {
+					"collectedDateTime": "2022-03-24T10:45:00.000+08:00"
+				}
+			}
+		},
+		{
+			"fullUrl": "Observation/817b0215-cd37-438f-a36e-ff86d981b9d5",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "817b0215-cd37-438f-a36e-ff86d981b9d5",
+				"status": "final",
+				"category": [
+					{
+						"coding": [
+							{
+								"code": "growth"
+							}
+						]
+					}
+				],
+				"code": {
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+							"valueCode": "not-applicable"
+						}
+					]
+				},
+				"valueString": "Heavy growth"
+			}
+		},
+		{
+			"fullUrl": "Observation/cfd4f230-76fd-45bc-a4c9-e6f92cddbb24",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "cfd4f230-76fd-45bc-a4c9-e6f92cddbb24",
+				"status": "final",
+				"category": [
+					{
+						"coding": [
+							{
+								"code": "growth"
+							}
+						]
+					}
+				],
+				"code": {
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+							"valueCode": "not-applicable"
+						}
+					]
+				},
+				"valueString": "Heavy growth"
+			}
+		},
+		{
+			"fullUrl": "Observation/8d78cb40-049f-40ed-a135-8887416403f3",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "8d78cb40-049f-40ed-a135-8887416403f3",
+				"identifier": [
+					{
+						"system": "https://ehealth.gov.hk/HCPID/STSeqNum",
+						"value": "1"
+					}
+				],
+				"status": "final",
+				"category": [
+					{
+						"coding": [
+							{
+								"code": "susceptibilityTest"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HKCTT",
+							"code": "5200017",
+							"display": "Amoxicillin+Clavulanate [Susceptibility]"
+						},
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HCP/local/LabTest",
+							"code": "22494",
+							"display": "Amoxycillin/clavulanate"
+						}
+					]
+				},
+				"valueCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HCP/local/STLocalcode",
+							"code": "S",
+							"display": "Sensitive"
+						}
+					],
+					"text": "Sensitive"
+				}
+			}
+		},
+		{
+			"fullUrl": "Observation/2377fca6-fb6e-4f5a-91ad-bc73c7588880",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "2377fca6-fb6e-4f5a-91ad-bc73c7588880",
+				"identifier": [
+					{
+						"system": "https://ehealth.gov.hk/HCPID/STSeqNum",
+						"value": "2"
+					}
+				],
+				"status": "final",
+				"category": [
+					{
+						"coding": [
+							{
+								"code": "susceptibilityTest"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HKCTT",
+							"code": "5200153",
+							"display": "Levofloxacin [Susceptibility]"
+						},
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HCP/local/LabTest",
+							"code": "23278",
+							"display": "Levofloxacin"
+						}
+					]
+				},
+				"valueCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HCP/local/STLocalcode",
+							"code": "S",
+							"display": "Sensitive"
+						}
+					],
+					"text": "Sensitive"
+				}
+			}
+		},
+		{
+			"fullUrl": "Observation/a6d415e2-b064-4d50-8af6-1d8ea457ed6e",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "a6d415e2-b064-4d50-8af6-1d8ea457ed6e",
+				"identifier": [
+					{
+						"system": "https://ehealth.gov.hk/HCPID/STSeqNum",
+						"value": "3"
+					}
+				],
+				"status": "final",
+				"category": [
+					{
+						"coding": [
+							{
+								"code": "susceptibilityTest"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HKCTT",
+							"code": "5200135",
+							"display": "Gentamicin [Susceptibility]"
+						},
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HCP/local/LabTest",
+							"code": "22540",
+							"display": "Gentamicin"
+						}
+					]
+				},
+				"valueCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HCP/local/STLocalcode",
+							"code": "S",
+							"display": "Sensitive"
+						}
+					],
+					"text": "Sensitive"
+				}
+			}
+		},
+		{
+			"fullUrl": "Observation/356d01c2-657c-4c62-a227-184b68605100",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "356d01c2-657c-4c62-a227-184b68605100",
+				"identifier": [
+					{
+						"system": "https://ehealth.gov.hk/HCPID/STSeqNum",
+						"value": "4"
+					}
+				],
+				"status": "final",
+				"category": [
+					{
+						"coding": [
+							{
+								"code": "susceptibilityTest"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HKCTT",
+							"code": "5200076",
+							"display": "Cefuroxime Parenteral [Susceptibility]"
+						},
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HCP/local/LabTest",
+							"code": "23273",
+							"display": "Cefuroxime (parenteral)"
+						}
+					]
+				},
+				"valueCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HCP/local/STLocalcode",
+							"code": "S",
+							"display": "Sensitive"
+						}
+					],
+					"text": "Sensitive"
+				}
+			}
+		},
+		{
+			"fullUrl": "Observation/4b42c021-0be2-4033-8d87-39d310ac1c65",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "4b42c021-0be2-4033-8d87-39d310ac1c65",
+				"identifier": [
+					{
+						"system": "https://ehealth.gov.hk/HCPID/STSeqNum",
+						"value": "5"
+					}
+				],
+				"status": "final",
+				"category": [
+					{
+						"coding": [
+							{
+								"code": "susceptibilityTest"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HKCTT",
+							"code": "5200135",
+							"display": "Gentamicin [Susceptibility]"
+						},
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HCP/local/LabTest",
+							"code": "22540",
+							"display": "Gentamicin"
+						}
+					]
+				},
+				"valueCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HCP/local/STLocalcode",
+							"code": "S",
+							"display": "Sensitive"
+						}
+					],
+					"text": "Sensitive"
+				}
+			}
+		},
+		{
+			"fullUrl": "Observation/269959a6-26bb-424f-9d8d-7ca2f1169b11",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "269959a6-26bb-424f-9d8d-7ca2f1169b11",
+				"identifier": [
+					{
+						"system": "https://ehealth.gov.hk/HCPID/STSeqNum",
+						"value": "4"
+					}
+				],
+				"status": "final",
+				"category": [
+					{
+						"coding": [
+							{
+								"code": "susceptibilityTest"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HKCTT",
+							"code": "5200218",
+							"display": "Piperacillin [Susceptibility]"
+						},
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HCP/local/LabTest",
+							"code": "22575",
+							"display": "Piperacillin"
+						}
+					]
+				},
+				"valueCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HCP/local/STLocalcode",
+							"code": "S",
+							"display": "Sensitive"
+						}
+					],
+					"text": "Sensitive"
+				}
+			}
+		},
+		{
+			"fullUrl": "Observation/71681733-8448-43a2-a57c-bd98818c2793",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "71681733-8448-43a2-a57c-bd98818c2793",
+				"identifier": [
+					{
+						"system": "https://ehealth.gov.hk/HCPID/STSeqNum",
+						"value": "3"
+					}
+				],
+				"status": "final",
+				"category": [
+					{
+						"coding": [
+							{
+								"code": "susceptibilityTest"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HKCTT",
+							"code": "5200153",
+							"display": "Levofloxacin [Susceptibility]"
+						},
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HCP/local/LabTest",
+							"code": "23278",
+							"display": "Levofloxacin"
+						}
+					]
+				},
+				"valueCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HCP/local/STLocalcode",
+							"code": "S",
+							"display": "Sensitive"
+						}
+					],
+					"text": "Sensitive"
+				}
+			}
+		},
+		{
+			"fullUrl": "Observation/211b8f60-b1fa-4563-b1ff-bd5689417cdf",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "211b8f60-b1fa-4563-b1ff-bd5689417cdf",
+				"identifier": [
+					{
+						"system": "https://ehealth.gov.hk/HCPID/STSeqNum",
+						"value": "2"
+					}
+				],
+				"status": "final",
+				"category": [
+					{
+						"coding": [
+							{
+								"code": "susceptibilityTest"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HKCTT",
+							"code": "5200244",
+							"display": "Cefoperazone+Sulbactam [Susceptibility]"
+						},
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HCP/local/LabTest",
+							"code": "22586",
+							"display": "Cefoperazone/sulbactam"
+						}
+					]
+				},
+				"valueCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HCP/local/STLocalcode",
+							"code": "S",
+							"display": "Sensitive"
+						}
+					],
+					"text": "Sensitive"
+				}
+			}
+		},
+		{
+			"fullUrl": "Observation/4336ea0f-8b08-4b9a-9e78-5f831ecdc179",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "4336ea0f-8b08-4b9a-9e78-5f831ecdc179",
+				"identifier": [
+					{
+						"system": "https://ehealth.gov.hk/HCPID/STSeqNum",
+						"value": "1"
+					}
+				],
+				"status": "final",
+				"category": [
+					{
+						"coding": [
+							{
+								"code": "susceptibilityTest"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HKCTT",
+							"code": "5200261",
+							"display": "Ticarcillin+Clavulanate [Susceptibility]"
+						},
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HCP/local/LabTest",
+							"code": "23280",
+							"display": "Ticarcillin/clavulanate"
+						}
+					]
+				},
+				"valueCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://ehealth.gov.hk/FHIR/HCP/local/STLocalcode",
+							"code": "I",
+							"display": "Intermediate"
+						}
+					],
+					"text": "Intermediate"
+				}
+			}
+		},
+		{
+			"fullUrl": "Practitioner/7b906e84-1646-477c-87f5-3f1818124ea6",
+			"resource": {
+				"resourceType": "Practitioner",
+				"id": "7b906e84-1646-477c-87f5-3f1818124ea6",
+				"name": [
+					{
+						"text": "DR. CHAN TAI MAN"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "Practitioner/fd41e4de-f2e7-46f1-a504-f12bb62907fa",
+			"resource": {
+				"resourceType": "Practitioner",
+				"id": "fd41e4de-f2e7-46f1-a504-f12bb62907fa",
+				"extension": [
+					{
+						"url": "https://ehealth.gov.hk/FHIR/1003857-PrescriberChineseFullName",
+						"valueString": "陳萍萍"
+					}
+				],
+				"name": [
+					{
+						"text": "Chan Ping Ping"
+					}
+				]
+			}
+		}
+	]
+}
